@@ -4,7 +4,8 @@
 
 | Item | Value |
 |------|-------|
-| Date | 15 July 2026 |
+| Date | 15 July 2026 |   
+| Incident Type | Brute-Force |
 | Severity | High |
 
 
@@ -60,12 +61,20 @@ A successful Event ID 4624 login immediately followed the failures.
 This indicates the attacker eventually guessed the password.
 
 
-### Phase 3
+## Impact Assessment
 
-The account was disabled.
+- Unauthorized access to the Windows host.
+- Compromise of privileged (Administrator) credentials.
+- Data theft or unauthorized modification of files.
+- Installation of malware or ransomware.
+- Lateral movement to other systems within the network.
+- Service disruption and potential downtime.
+- Increased risk of privilege escalation and persistence.
 
-Firewall rules blocked the attacking IP.
 
-Password reset was completed.
+## Response Actions
 
-MFA was enabled.
+- The account was disabled.
+- Firewall rules blocked the attacking IP.
+- Password reset was completed.
+- MFA was enabled.
