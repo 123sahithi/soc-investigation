@@ -22,27 +22,23 @@ The activity matched the behavior of a password brute-force attack.
 
 Hostname
 
-```
 WIN11-LAB
-```
+
 
 Operating System
 
-```
 Windows 11 Pro
-```
+
 
 User Account
 
-```
 Administrator
-```
+
 
 Source IP
 
-```
 192.168.1.105
-```
+
 
 
 ## Investigation
@@ -59,6 +55,20 @@ The same IP repeatedly attempted authentication.
 A successful Event ID 4624 login immediately followed the failures.
 
 This indicates the attacker eventually guessed the password.
+
+
+# Incident Timeline
+
+| Time | Event |
+|------|-------|
+|10:14:05|Failed Login (4625)|
+|10:14:08|Failed Login (4625)|
+|10:14:12|Failed Login (4625)|
+|10:14:17|Failed Login (4625)|
+|10:14:22|Failed Login (4625)|
+|10:14:30|Failed Login (4625)|
+|10:14:41|Failed Login (4625)|
+|10:15:10|Successful Login (4624)|
 
 
 ## Impact Assessment
